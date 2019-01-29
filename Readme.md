@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Владислава Калюга](https://up.htmlacademy.ru/htmlcss/24/user/969433).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгения Зорина](https://htmlacademy.ru/profile/sanguis).
 
 ---
 
