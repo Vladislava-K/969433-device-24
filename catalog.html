@@ -7,20 +7,30 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation-header">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
-          </a>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
+        </a>
 
-        <ul class="user-navigation-header">
+        <ul class="search-navigation-header">
           <li>
-            <a href="search.html">Поиск по сайту</a>
+            <form action="search.html">
+              <input type="search" name="mysearch" placeholder="Поиск по сайту">
+              <!-- Я про нижнюю строчку правильно подумала? -->
+              <input class="visually-hidden" type="submit" value="Найти">
+            </form>
           </li>
+        </ul>
+
+        <ul class="goout-navigation-header">
           <li>
             <a href="рersonal-аrea.html">Валентин Петухов</a>
           </li>
           <li>
             <a href="goout.html">Выйти</a>
           </li>
+        </ul>
+
+        <ul class="user-navigation-header">
           <li>
             <a href="compare.html">Сравнить</a>
           </li>
@@ -57,99 +67,87 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <fieldset>
-        <legend>Цвет</legend>
-          <input type="checkbox" name="Colour" value="Colour-black" checked>
+        <form action="filter.html" method="post">
+          <fieldset>
+            <legend>Цвет</legend>
+            <input type="checkbox" name="Colour" value="Colour-black" id="Colour-black" checked>
             <label for="Colour-black">Черный</label>
-          <br>
-          <input type="checkbox" name="Colour" value="Colour-white">
+            <br>
+            <input type="checkbox" name="Colour" value="Colour-white" id="Colour-white">
             <label for="Colour-white">Белый</label>
-          <br>
-          <input type="checkbox" name="Colour" value="Colour-blue" checked>
+            <br>
+            <input type="checkbox" name="Colour" value="Colour-blue" id="Colour-blue" checked>
             <label for="Colour-blue">Синий</label>
-          <br>
-          <input type="checkbox" name="Colour" value="Colour-red" checked>
+            <br>
+            <input type="checkbox" name="Colour" value="Colour-red" id="Colour-red" checked>
             <label for="Colour-red">Красный</label>
-          <br>
-          <input type="checkbox" name="Colour" value="Colour-pink">
+            <br>
+            <input type="checkbox" name="Colour" value="Colour-pink" id="Colour-pink">
             <label for="Colour-pink">Розовый</label>
-          <br>
-        </fieldset>
+            <br>
+          </fieldset>
 
-        <fieldset>
-        <legend>Bluetooth</legend>
-          <label>
-            <input type="radio" name="question-one" value="Есть" checked>Есть
-          </label>
-          <br>
-          <label>
-            <input type="radio" name="question-one" value="Нет">Нет
-          </label>
-        </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <input type="radio" name="Bluetooth" value="Есть" id="question-one" checked>
+            <label for="question-one">Есть</label>
+            <br>
+            <input type="radio" name="Bluetooth" value="Нет" id="question-one">
+            <label for="question-one">Нет</label>
+          </fieldset>
+        </form>
+        <div class="buttons">
+          <input type="submit" value="Показать">
+        </div>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Любительская селфи-палка</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>500 руб.</b>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Профессиональная селфи-палка</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>1500 руб.</b>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Непотопляемая селфи-палка</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>2500 руб.</b>
-            </p>
-          </li>
-          <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-category">Селфи-палка «Следуй за мной»</span>
-              </a>
-            </h3>
-            <p class="catalog-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка «Следуй за мной»">
-              </a>
-            </p>
-            <p class="catalog-item-price">
-              <b>4900 руб.</b>
-            </p>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <span class="catalog-item-title">Любительская селфи-палка</span>
+              <img src="img/product-1.jpg" width="220" height="165" alt="Любительская селфи-палка">
+              <p class="catalog-item-price">500 руб.</p>
+              <div class="buttons">
+                <input type="submit" value="В корзину">
+              </div>
+              <div class="buttons">
+                <input type="submit" value="Добавить к сравнению">
+              </div>
+            </li>
+            <li class="catalog-item">
+              <span class="catalog-item-title">Профессиональная селфи-палка</span>
+              <img src="img/product-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка">
+              <p class="catalog-item-price">1500 руб.</p>
+              <div class="buttons">
+                <input type="submit" value="В корзину">
+              </div>
+              <div class="buttons">
+                <input type="submit" value="Добавить к сравнению">
+              </div>
+            </li>
+            <li class="catalog-item">
+              <span class="catalog-item-title">Непотопляемая селфи-палка</span>
+              <img src="img/product-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка">
+              <p class="catalog-item-price">2500 руб.</p>
+              <div class="buttons">
+                <input type="submit" value="В корзину">
+              </div>
+              <div class="buttons">
+                <input type="submit" value="Добавить к сравнению">
+              </div>
+            </li>
+            <li class="catalog-item">
+              <span class="catalog-item-title">Селфи-палка «Следуй за мной»</span>
+              <img src="img/product-4.jpg" width="220" height="165" alt="Селфи-палка «Следуй за мной»">
+              <p class="catalog-item-price">4900 руб.</p>
+              <div class="buttons">
+                <input type="submit" value="В корзину">
+              </div>
+              <div class="buttons">
+                <input type="submit" value="Добавить к сравнению">
+              </div>
+            </li>
           </ul>
         </section>
 
@@ -162,7 +160,6 @@
           </ul>
           <span class="button pagination-button pagination-button-next">Вперед</span>
         </section>
-
     </main>
 
     <footer class="main-footer">
@@ -171,13 +168,16 @@
       </a>
 
       <nav class="main-navigation-footer">
-        <ul class="user-navigation-footer">
+        <ul class="goout-navigation-footer">
           <li>
             <a href="рersonal-аrea.html">Валентин Петухов</a>
           </li>
           <li>
             <a href="goout.html">Выйти</a>
           </li>
+        </ul>
+
+        <ul class="user-navigation-footer">
           <li>
             <a href="compare.html">Сравнить</a>
           </li>
@@ -204,6 +204,7 @@
       </nav>
 
       <address class="phone">тел.: +7(495)495-95-95</address>
+      <br>
 
       <div class="footer-social">
         <a class="social-butoon" href="#">Фейсбук</a>
