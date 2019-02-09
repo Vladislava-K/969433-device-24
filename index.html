@@ -11,35 +11,45 @@
             <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
           </a>
 
-        <ul class="user-navigation-header">
-          <li>
-            <a href="search.html">Поиск по сайту</a>
-          </li>
-          <li>
-            <a href="entrance.html">Войти</a>
-          </li>
-          <li>
-            <a href="compare.html">Сравнить</a>
-          </li>
-          <li>
-            <a href="basket.html">Корзина</a>
-          </li>
-        </ul>
+          <ul class="search-navigation-header">
+            <li>
+              <form action="search.html">
+                <input type="search" name="mysearch" placeholder="Поиск по сайту">
+                <!-- Я про нижнюю строчку правильно подумала? -->
+                <input class="visually-hidden" type="submit" value="Найти">
+              </form>
+            </li>
+          </ul>
 
-        <ul class="site-navigation-header">
-          <li>
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a href="delivery.html">Доставка</a>
-          </li>
-          <li>
-            <a href="warranty.html">Гарантия</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакты</a>
-          </li>
-        </ul>
+          <ul class="entrance-navigation-header">
+            <li>
+              <a href="entrance.html">Войти</a>
+            </li>
+          </ul>
+
+          <ul class="user-navigation-header">
+            <li>
+              <a href="compare.html">Сравнить</a>
+            </li>
+            <li>
+              <a href="basket.html">Корзина</a>
+            </li>
+          </ul>
+
+          <ul class="site-navigation-header">
+            <li>
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li>
+              <a href="delivery.html">Доставка</a>
+            </li>
+            <li>
+              <a href="warranty.html">Гарантия</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
       </nav>
     </header>
 
@@ -52,27 +62,24 @@
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="transport-comp">
+        <ul >
           <li>
-            <a href="transport-comp1.html">Деловые линии</a>
+            Деловые линии
           </li>
           <li>
-            <a href="transport-comp2.html">Автотрейдинг</a>
+            Автотрейдинг
           </li>
           <li>
-            <a href="transport-comp3.html">ЖелДорЭкспедиция</a>
+            ЖелДорЭкспедиция
           </li>
         </ul>
+        <a href="about-us.html">Подробнее о нас</a>
       </section>
 
       <section class="address">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <!--ТУТ БУДЕТ КАРТА-->
-      </section>
-
-      <section class="more-about-us">
-        <a href="about-us.html">Подробнее о нас</a>
+        <img src="img/map.jpg" width="220" height="165" alt="г. Москва, ул. Строителей 15 - отметка на карте">
         <div class="buttons">
           <input type="submit" value="Напишите нам">
         </div>
@@ -80,16 +87,18 @@
     </main>
 
     <footer class="main-footer">
-        <a class="main-footer-logo">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
-        </a>
-
+      <a class="main-footer-logo">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
+      </a>
 
       <nav class="main-navigation-footer">
-        <ul class="user-navigation-footer">
+        <ul class="entrance-navigation-footer">
           <li>
             <a href="entrance.html">Войти</a>
           </li>
+        </ul>
+
+        <ul class="user-navigation-footer">
           <li>
             <a href="compare.html">Сравнить</a>
           </li>
@@ -99,38 +108,34 @@
         </ul>
       </nav>
 
-      <section class="contacts">
-        г. Москва, ул. Строителей 15
-      </section>
-      <section class="phone">
-        тел.: +7(495)495-95-95
-      </section>
+      <address class="address">г. Москва, ул. Строителей 15</address>
 
-        <nav>
-          <ul class="site-navigation-header">
-            <li>
-              <a href="delivery.html">Доставка</a>
-            </li>
-            <li>
-              <a href="warranty.html">Гарантия</a>
-            </li>
-            <li>
-              <a href="contacts.html">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+      <nav>
+        <ul class="site-navigation-header">
+          <li>
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
 
+      <address class="phone">тел.: +7(495)495-95-95</address>
+
+      <br>
       <div class="footer-social">
         <a class="social-butoon" href="#">Фейсбук</a>
         <a class="social-butoon" href="#">Инстаграм</a>
         <a class="social-butoon" href="#">Твиттер</a>
       </div>
 
-      <p>
-        <a class="academy-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/index-logo-academy.svg" width="368" height="153" alt="Логотип Академии">
-        </a>
-      </p>
+      <a class="academy-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/index-logo-academy.svg" width="368" height="153" alt="Логотип Академии">
+      </a>
     </footer>
   </body>
 </html>
