@@ -8,15 +8,16 @@
     <header class="main-header">
       <nav class="main-navigation-header">
           <a class="main-header-logo">
-            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
+            <img src="1img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
           </a>
 
           <ul class="search-navigation-header">
             <li>
-              <form action="search.html">
+              <form action="" name="searched" method="get">
                 <input type="search" name="mysearch" placeholder="Поиск по сайту">
-                <!-- Я про нижнюю строчку правильно подумала? -->
-                <input class="visually-hidden" type="submit" value="Найти">
+                <button type="submit" class="search-button" form="searched">
+                    Найти
+                </button>
               </form>
             </li>
           </ul>
@@ -27,7 +28,7 @@
             </li>
           </ul>
 
-          <ul class="user-navigation-header">
+          <ul class="product-navigation-header">
             <li>
               <a href="compare.html">Сравнить</a>
             </li>
@@ -79,16 +80,21 @@
       <section class="address">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" width="220" height="165" alt="г. Москва, ул. Строителей 15 - отметка на карте">
-        <div class="buttons">
+        <img src="1img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+
+        <!--<a class="button" type="button" href="letter.html">Напишите нам</a>-->
+
+         <div class="buttons">
           <input type="submit" value="Напишите нам">
+            <!-- Здесь будет форма -->
         </div>
+
       </section>
     </main>
 
     <footer class="main-footer">
       <a class="main-footer-logo">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип Девайс">
+        <img src="1img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
       </a>
 
       <nav class="main-navigation-footer">
@@ -98,7 +104,7 @@
           </li>
         </ul>
 
-        <ul class="user-navigation-footer">
+        <ul class="product-navigation-footer">
           <li>
             <a href="compare.html">Сравнить</a>
           </li>
@@ -126,7 +132,6 @@
 
       <address class="phone">тел.: +7(495)495-95-95</address>
 
-      <br>
       <div class="footer-social">
         <a class="social-butoon" href="#">Фейсбук</a>
         <a class="social-butoon" href="#">Инстаграм</a>
@@ -134,7 +139,7 @@
       </div>
 
       <a class="academy-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/index-logo-academy.svg" width="368" height="153" alt="Логотип Академии">
+        <img src="1img/logo-html.svg" width="27" height="35" alt="Логотип Академии">
       </a>
     </footer>
   </body>
