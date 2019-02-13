@@ -69,38 +69,56 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Цвет</legend>
-            <p>
-              <input type="checkbox" name="Colour" value="Colour-black" id="Colour-black" checked>
-              <label for="Colour-black">Черный</label>
-            </p>
-            <p>
-              <input type="checkbox" name="Colour" value="Colour-white" id="Colour-white">
-              <label for="Colour-white">Белый</label>
-            </p>
-            <p>
-              <input type="checkbox" name="Colour" value="Colour-blue" id="Colour-blue" checked>
-              <label for="Colour-blue">Синий</label>
-            </p>
-            <p>
-              <input type="checkbox" name="Colour" value="Colour-red" id="Colour-red" checked>
-              <label for="Colour-red">Красный</label>
-            </p>
-            <p>
-              <input type="checkbox" name="Colour" value="Colour-pink" id="Colour-pink">
-              <label for="Colour-pink">Розовый</label>
-            </p>
+            <ul>
+              <li class="filter-option">
+                <p>
+                  <input type="checkbox" name="Colour" value="Colour-black" id="Colour-black" checked>
+                  <label for="Colour-black">Черный</label>
+                </p>
+              </li>
+              <li class="filter-option">
+                <p>
+                  <input type="checkbox" name="Colour" value="Colour-white" id="Colour-white">
+                  <label for="Colour-white">Белый</label>
+                </p>
+              </li>
+              <li class="filter-option">
+                <p>
+                  <input type="checkbox" name="Colour" value="Colour-blue" id="Colour-blue" checked>
+                  <label for="Colour-blue">Синий</label>
+                </p>
+              </li>
+              <li class="filter-option">
+                <p>
+                  <input type="checkbox" name="Colour" value="Colour-red" id="Colour-red" checked>
+                  <label for="Colour-red">Красный</label>
+                </p>
+              </li>
+              <li class="filter-option">
+                <p>
+                  <input type="checkbox" name="Colour" value="Colour-pink" id="Colour-pink">
+                  <label for="Colour-pink">Розовый</label>
+                </p>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset>
             <legend>Bluetooth</legend>
-            <p>
-              <input type="radio" name="Bluetooth" value="Есть" id="question-yes" checked>
-              <label for="question-yes">Есть</label>
-            </p>
-            <p>
-              <input type="radio" name="Bluetooth" value="Нет" id="question-not">
-              <label for="question-not">Нет</label>
-            </p>
+            <ul>
+              <li class="filter-option">
+                <p>
+                  <input type="radio" name="Bluetooth" value="Есть" id="question-yes" checked>
+                  <label for="question-yes">Есть</label>
+                </p>
+              </li>
+              <li class="filter-option">
+                <p>
+                  <input type="radio" name="Bluetooth" value="Нет" id="question-not">
+                  <label for="question-not">Нет</label>
+                </p>
+              </li>
+            </ul>
           </fieldset>
 
           <button type="submit" class="filter-button button">Показать</button>
@@ -215,13 +233,13 @@
 
       <ul class="footer-social">
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#" aria-label="Мы на Фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#" aria-label="Наш Инстаграм">Инстаграм</a>
         </li>
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#" aria-label="Мы в Твиттер">Твиттер</a>
         </li>
       </ul>
 

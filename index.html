@@ -70,13 +70,10 @@
       <section class="writetous">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-
+        <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15, город  Москва">
         <div class="buttons">
           <button type="button">Напишите нам</button>
-            <!-- Здесь будет форма -->
         </div>
-
       </section>
     </main>
 
@@ -122,13 +119,13 @@
 
       <ul class="footer-social">
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#" aria-label="Мы на Фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#" aria-label="Наш Инстаграм">Инстаграм</a>
         </li>
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#" aria-label="Мы в Твиттер">Твиттер</a>
         </li>
       </ul>
 
@@ -136,5 +133,66 @@
         <img src="img/logo-html.svg" width="27" height="35" alt="Логотип Академии">
       </a>
     </footer>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свои данные.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваши имя и фамилия:</label>
+          <input class="flname-icon-user" id="user-name" type="text" name="flname" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+          <input class="user-e-mail-icon-user" id="user-email" type="email" name="user-e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-login">Логин:</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль:</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember">
+            Запомните меня
+          </label>
+          <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу улица Строителей, 15, Москва">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-writetous">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input class="flname-icon-user" id="user-name" type="text" name="flname" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
+          <input class="user-e-mail-icon-user" id="user-email" type="email" name="user-e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-letter">Текст письма:</label>
+          <textarea class="letter-icon-user" id="user-letter" placeholder="В свободной форме" name="letter" rows="5" cols=""></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
