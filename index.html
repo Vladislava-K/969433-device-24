@@ -136,29 +136,19 @@
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите свои данные.</p>
+      <p>Введите свои логин и пароль.</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="visually-hidden" for="user-name">Ваши имя и фамилия:</label>
-          <input class="flname-icon-user" id="user-name" type="text" name="flname" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-          <input class="user-e-mail-icon-user" id="user-email" type="email" name="user-e-mail" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-login">Логин:</label>
+          <label class="visually-hidden" for="user-login">Логин</label>
           <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
         </p>
         <p>
-          <label class="visually-hidden" for="user-password">Пароль:</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="password-icon-user" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <label class="login-checkbox">
-            <input type="checkbox" name="remember">
-            Запомните меня
-          </label>
+          <input type="checkbox" name="remember" value="yes" id="remember" checked>
+          <label for="remember">Запомните меня</label>
           <a class="restore" href="#">Я забыл пароль!</a>
         </p>
         <button class="button" type="submit">Войти</button>
@@ -168,9 +158,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
         <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу улица Строителей, 15, Москва">
-      </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
@@ -179,11 +167,11 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="user-name">Ваше имя:</label>
-          <input class="flname-icon-user" id="user-name" type="text" name="flname" placeholder="Имя Фамилия">
+          <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-          <input class="user-e-mail-icon-user" id="user-email" type="email" name="user-e-mail" placeholder="email@example.com">
+          <input class="email-icon-user" id="user-email" type="email" name="user-email" placeholder="email@example.com">
         </p>
         <p>
           <label class="visually-hidden" for="user-letter">Текст письма:</label>
