@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy Light"), local("Gilroy-Light"),
+         url("Fonts/Gilroylight.woff2") format("woff2"),
+         url("Fonts/Gilroylight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+         url("Fonts/Gilroyextrabold.woff2") format("woff2"),
+         url("Fonts/Gilroyextrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy","Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #black;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #f0c52e;
+}
+
+.user-navigation,
+.product-navigation
+.site-navigation {
+  list-style: none;
+}
