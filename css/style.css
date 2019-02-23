@@ -62,11 +62,12 @@ a {
 .main-header {
   width: 1160px;
   height: 186px;
-  margin-top: 40px;
   /*margin-left: 140px;
   margin-right: 140px;*/
   background-color: #f7e196;
   margin: 0 auto;
+  margin-top: 40px;
+
   /*background: linear-gradient(to top left, purple, crimson, orangered, gold);
   background-size: 1160px 186px;*/
 }
@@ -85,19 +86,25 @@ a {
 }
 
 .main-logo {
+
   background-color: transparent;
-  float: left;
+  width: 163px;
+  height: 35px;
+
+  /*margin: 0;*/
+  /*padding: 0;*/
+
+  margin-top: 23;
+  /*padding-top: 0;*/
 }
 
 .main-logo:hover {
   background-color: transparent;
-  float: left;
   opacity: 0.6;
 }
 
 .main-logo:focus {
   background-color: transparent;
-  float: left;
   opacity: 0.3;
 }
 
@@ -185,8 +192,8 @@ a {
   text-align: center;
 
   width: 85px;
-  padding-top: 16px;
-  padding-bottom: 18px;
+  padding-top: 21px;
+  padding-bottom: 19px;
 }
 
 .search-button:hover {
@@ -609,7 +616,7 @@ outline-style: none;
   font-weight: 800;
 }
 
-.pagination-list a: {
+.pagination-list a {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -650,10 +657,6 @@ outline-style: none;
   color: rgba(0, 0, 0, 0.6);
   background-color: #d9d9d9;
 }
-
-
-
-
 
 .main-footer {
   width: 1440px;
@@ -897,4 +900,102 @@ outline-style: none;
   padding-top: 11px;
   padding-bottom: 11px;
   outline-style: none;
+}
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.main-header {
+  /*margin-bottom: 76px;*/
+
+}
+
+.main-navigation {
+   /* Временно для сетки
+   min-height: 226px;
+   background-color: red;
+   background-color: transparent;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+
+.main-logo {
+  /* width: 163px;
+  height: 35px;
+
+  Временно для сетки
+display: block;
+
+  margin: 0;
+  padding: 0;
+
+  margin-top: 23;
+padding-top: 23;*/
+
+
+}
+
+
+.column-1 {
+
+display: flex;
+
+  margin: 0;
+  padding: 0;
+
+    width: 100%;
+    margin-bottom: 54px;
+
+
+  /*display: flex;*/
+  /*flex-direction: row;*/
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.foundling {
+  width: 580px;
+  margin: 0;
+  padding: 100 0;
+}
+
+.user-navigation {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-navigation {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-navigation {
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 18px;
+/*display: flex;*/
+/*flex-direction: row;*/
 }
