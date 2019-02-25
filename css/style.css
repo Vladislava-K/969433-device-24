@@ -83,7 +83,7 @@ a {
 
   /*padding: 0px;*/
   /*margin: 0 auto;*/
-  margin-bottom: 45px;
+  margin-bottom:45px;
 
   /*background: linear-gradient(to top left, purple, crimson, orangered, gold);
   background-size: 1160px 186px;*/
@@ -92,10 +92,11 @@ a {
 .main-navigation {
   /*padding: 0px;*/
   /*margin: 0px;*/
+
   margin-top: 40px;
 
   width: 1160px;
-  height: 186px;
+  min-height: 186px;
   background-color: #f7e196;
 
   font-size: 15px;
@@ -119,13 +120,13 @@ a {
   opacity: 0.3;
 }
 
-.main-navigation-custom {
+.main-header-center {
   width: 100%;
   /*margin-bottom: 49px;*/
   margin: 0 0 35px 0;
-}
+/*}*/
 
-.main-navigation-custom .container {
+/*.main-navigation-custom .container {*/
   padding: 0;
 
   display: flex;
@@ -778,75 +779,74 @@ a {
   width: 1440px;
   min-height: 323px;
   background-color: #454545;
+
   padding: 0;
-  /*margin: 0;*/
+  margin-top: 97px;
+}
 
-  padding: 65px 0 40px 0;
-  margin-top: 94px;
-
-
-
-.main-footer .main-navigation {
+/*.main-footer .main-navigation {*/
+  .main-navigation-footer {
   font-size: 15px;
   line-height: 36px;
   color: #ffffff;
   font-family: "Open Sans";
   font-weight: 300;
-  /*background-color: #454545;*/
-  padding: 0;
-  margin: 0;
+  background-color: #454545;
+
+  margin-top: 0;
 }
-
-
-
 
 .main-footer .main-logo {
-  padding: 0;
 
-  margin: 0 0 0 0;
-  width: 180px;
-  margin-right: 680px;
-}
-
-
-/*
-.main-logo-footer {
   padding: 0;
   margin: 0;
-  width: 180px;
-  margin-right: 680px;
-}
-*/
+  position: relative;
+  top: 65px;
 
-/*.main-navigation .container {
+  /*padding: 65px 0 0 140px;*/
+  width: 170px;
+  /*margin: 0 674px 0 0;*/
+}
+
+
+
+.main-footer .main-footer-center {
+  padding: 0;
+  margin: 0 0 0 660px;
+
   display: flex;
-}
-*/
-/*.user-navigation {
-  width: 220px;
-}*/
+  justify-content: space-between;
 
-/*.product-navigation {
-  width: 260px;
-  margin: 0;
-  margin-left: auto;
-}*/
-
-.address {
-  width: 200px;
-  margin: 0;
-  margin-right: 160px;
+  /*align-content: flex-end;*/
+  list-style: none;
 }
+
+.main-footer .user-navigation {
+  padding: 0;
+  margin: 0;
+  width: 230px;
+}
+
+.main-footer .product-navigation {
+  padding: 0;
+  margin: 0 0 53px 0;
+
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
 
 /*.site-navigation .container {
   display: flex;
 }*/
 
-.phone {
-  width: 180px;
-  margin: 0;
-  margin-left: 180px;
-}
+
 
 .footer-social {
   width: 160px;
@@ -876,7 +876,15 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer .site-navigation {
+
+
+
+.main-address-center {
+width: 1160px;
+}
+
+/*.main-footer .site-navigation {*/
+.site-navigation-footer {
   font-size: 18px;
   letter-spacing: 4px;
   line-height: 24px;
@@ -884,29 +892,51 @@ a {
   font-family: "Gilroy";
   font-weight: 800;
   text-transform: uppercase;
+
+  padding: 0;
+  margin: 0 0 70px 0;
+
+  width: 440px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
 }
+/*
+.main-footer .site-navigation li:first-child {
+  width: 140px;
+  margin-right: 0px;
+}
+
+.main-footer .site-navigation li:last-child {
+  width: 140px;
+  margin-left: 0px;
+}
+*/
+
 
 .main-footer .user-navigation,
 .main-footer .product-navigation,
-.main-footer .site-navigation {
+.site-navigation-footer {
   list-style: none;
 }
 
 .main-footer .user-navigation a,
 .main-footer .product-navigation a,
-.main-footer .site-navigation a {
+.site-navigation-footer a {
   color: #ffffff;
 }
 
 .main-footer .user-navigation a:hover,
 .main-footer .product-navigation a:hover,
-.main-footer .site-navigation a:hover {
+.site-navigation-footer a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
 .main-footer .user-navigation a:focus,
 .main-footer .product-navigation a:focus,
-.main-footer .site-navigation a:focus {
+.site-navigation-footer a:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -914,12 +944,13 @@ a {
 .main-footer .user-navigation a:focus,
 .main-footer .product-navigation a:hover,
 .main-footer .product-navigation a:focus,
-.main-footer .site-navigation a:hover,
-.main-footer .site-navigation a:focus {
+.site-navigation-footer a:hover,
+.site-navigation-footer a:focus {
   background-color: #454545;
 }
 
-.main-footer address {
+/*.main-footer address {*/
+.main-address-center address {
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -929,14 +960,21 @@ a {
   background-color: #454545;
 }
 
-.address .address {
+.main-address-center .address {
   font-style: normal;
-  float: left;
+
+  width: 200px;
+  /*margin: 0 160px 0 0;*/
+  margin-right: 160px;
 }
 
-.address .phone {
+
+.main-address-center .phone {
   font-style: normal;
-  float: right;
+
+  width: 160px;
+  /*margin: 0 0 0 180px;*/
+  margin-left: 200px;
 }
 
 .footer-social {
@@ -970,6 +1008,9 @@ a {
 }
 
 .modal {
+display: none;
+
+
   color: #000000;
 
   background-color: #ffffff;
