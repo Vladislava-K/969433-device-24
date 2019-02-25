@@ -8,66 +8,60 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-logo">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
         </a>
 
-        <div class="main-navigation-wrapper">
-          <!---<div class="container">--->
-          <div class="main-navigation-part1">
-            <div class="container">
-              <form class="foundling" action="https://echo.htmlacademy.ru" method="get">
-                <input type="search" placeholder="Поиск по сайту">
-                <button type="submit" class="search-button">Найти</button>
-              </form>
+        <div class="main-navigation-custom">
+          <div class="container">
+            <form class="foundling" action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" placeholder="Поиск по сайту">
+              <button type="submit" class="search-button">Найти</button>
+            </form>
 
-              <ul class="user-navigation">
-                <li>
-                  <a href="entrance.html">Войти</a>
-                </li>
-              </ul>
+            <ul class="user-navigation">
+              <li>
+                <a href="entrance.html">Войти</a>
+              </li>
+            </ul>
 
-              <ul class="product-navigation">
-                <li>
-                  <a href="compare.html">Сравнить</a>
-                </li>
-                <li>
-                  <a href="basket.html">Корзина</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="product-navigation">
+              <li>
+                <a href="compare.html">Сравнить</a>
+              </li>
+              <li>
+                <a href="basket.html">Корзина</a>
+              </li>
+            </ul>
           </div>
-
-          <div class="main-navigation-part2">
-            <div class="container">
-              <ul class="site-navigation">
-                <li>
-                  <a href="catalog.html">Каталог товаров</a>
-                </li>
-                <li>
-                  <a href="delivery.html">Доставка</a>
-                </li>
-                <li>
-                  <a href="warranty.html">Гарантия</a>
-                </li>
-                <li>
-                  <a href="contacts.html">Контакты</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!---</div>--->
         </div>
+
+
+        <ul class="site-navigation container">
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li>
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
       </nav>
+    </header>
 
     <!--БЛОК, КОТОРЫЙ ДЕЛАЕТСЯ ПОЗЖЕ-->
 
-    <main class="container">
+    <main class="">
       <h1 class="visually-hidden">Девайс</h1>
 
-      <div class="index-columns">
+      <div class="index-columns container">
         <section class="information">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
@@ -93,14 +87,18 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-logo-footer">        
-        <a class="main-logo">
-          <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
-        </a>
-      </div>
+    <footer class="main-footer container">
 
-      <div class="main-navigation">
+      <div class="main-navigation container">
+        <div class="container">
+
+          <!---<div class="main-logo-footer">--->
+            <a class="main-logo">
+              <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
+            </a>
+        <!---</div>--->
+
+
         <ul class="user-navigation">
           <li>
             <a href="entrance.html">Войти</a>
@@ -116,10 +114,11 @@
           </li>
         </ul>
       </div>
+    </div>
 
+<div class="container">
       <address class="address">г. Москва, ул. Строителей 15</address>
 
-      <div>
         <ul class="site-navigation">
           <li>
             <a href="delivery.html">Доставка</a>
@@ -131,10 +130,11 @@
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
-      </div>
 
       <address class="phone">тел.: +7(495)495-95-95</address>
+    </div>
 
+<div class="container">
       <ul class="footer-social">
         <li>
           <a class="social-button" href="#" aria-label="Мы на Фейсбук">Фейсбук</a>
@@ -150,6 +150,7 @@
       <a class="academy-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-html.svg" width="27" height="35" alt="Логотип Академии">
       </a>
+    </div>
     </footer>
 
     <section class="modal modal-map">
