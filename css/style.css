@@ -550,7 +550,7 @@ img {
   padding: 0;
   margin: 0;
   width: 266px;
-  margin-bottom: 188px;
+  /*margin-bottom: 188px;*/
 }
 
 .filters h2 {
@@ -757,8 +757,10 @@ img {
 
   list-style: none;
   width: 760px;
-  margin-left: 72px;
+  margin: 0 auto;
+}
 
+.pagination-list ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1008,7 +1010,6 @@ list-style: none;
 
 .main-social-center {
   padding: 0;
-  margin: 0 0 79px 0;
 
   width: 100%;
 
