@@ -154,19 +154,23 @@
 
     <section class="modal modal-writetous">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="user-name">Ваше имя:</label>
-          <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="user-email">Ваш e-mail:</label>
-          <input class="email-icon-user" id="user-email" type="email" name="user-email" placeholder="email@example.com">
-        </p>
-        <p>
+      <form class="card" action="https://echo.htmlacademy.ru" method="post">
+        <div class="data">
+
+          <div class="data-col">
+            <label for="user-name">Ваше имя:</label>
+            <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="data-col">
+            <label for="user-email">Ваш e-mail:</label>
+            <input class="email-icon-user" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="data data-col">
+          
           <label for="user-letter">Текст письма:</label>
           <textarea class="letter-icon-user" id="user-letter" placeholder="В свободной форме" name="letter" rows="5" cols=""></textarea>
-        </p>
+        </div>
         <button class="buttons" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
