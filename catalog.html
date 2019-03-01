@@ -77,23 +77,23 @@
               <legend>Цвет</legend>
               <ul class="filter-option">
                 <li>
-                  <input type="checkbox" name="colour" value="black" id="colour-black" checked>
+                  <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="black" id="colour-black" checked>
                   <label for="colour-black">Черный</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="colour" value="white" id="colour-white">
+                  <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="white" id="colour-white">
                   <label for="colour-white">Белый</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="colour" value="blue" id="colour-blue" checked>
+                  <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="blue" id="colour-blue" checked>
                   <label for="colour-blue">Синий</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="colour" value="red" id="colour-red" checked>
+                  <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="red" id="colour-red" checked>
                   <label for="colour-red">Красный</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="colour" value="pink" id="colour-pink">
+                  <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="pink" id="colour-pink">
                   <label for="colour-pink">Розовый</label>
                 </li>
               </ul>
@@ -103,16 +103,16 @@
               <legend>Bluetooth</legend>
               <ul class="filter-option">
                 <li>
-                  <input type="radio" name="bluetooth" value="есть" id="question-yes" checked>
+                  <input class="visually-hidden radio-input filter-input-radio" type="radio" name="bluetooth" value="есть" id="question-yes" checked>
                   <label for="question-yes">Есть</label>
                 </li>
                 <li>
-                  <input type="radio" name="bluetooth" value="нет" id="question-not">
+                  <input class="visually-hidden radio-input filter-input-radio" type="radio" name="bluetooth" value="нет" id="question-not">
                   <label for="question-not">Нет</label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter-button buttons">Показать</button>
+            <button type="submit" class="filter-button button">Показать</button>
           </form>
         </section>
 
@@ -123,10 +123,12 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <h3 class="catalog-item-title">Любительская селфи-палка</h3>
-                <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <p class="catalog-item-price">500 руб.</p>
+                  <p class="catalog-item-image">
+                    <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </p>
+                  <p class="catalog-item-price">500 руб.</p>
                 <div>
-                  <button class="buttons" type="button">В корзину</button>
+                  <button class="button" type="button">В корзину</button>
                 </div>
                 <div>
                   <button class="button-picture" type="button">Добавить к сравнению</button>
@@ -134,10 +136,12 @@
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-item-title">Профессиональная селфи-палка</h3>
-                <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <p class="catalog-item-image">
+                  <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                </p>
                 <p class="catalog-item-price">1500 руб.</p>
                 <div>
-                  <button class="buttons" type="button">В корзину</button>
+                  <button class="button" type="button">В корзину</button>
                 </div>
                 <div>
                   <button class="button-picture" type="button">Добавить к сравнению</button>
@@ -145,10 +149,12 @@
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-item-title">Непотопляемая селфи-палка</h3>
-                <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <p class="catalog-item-image">
+                  <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                </p>
                 <p class="catalog-item-price">2500 руб.</p>
                 <div>
-                  <button class="buttons" type="button">В корзину</button>
+                  <button class="button" type="button">В корзину</button>
                 </div>
                 <div>
                   <button class="button-picture" type="button">Добавить к сравнению</button>
@@ -156,10 +162,12 @@
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-item-title">Селфи-палка «Следуй за мной»</h3>
-                <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <p class="catalog-item-image">
+                  <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                </p>
                 <p class="catalog-item-price">4900 руб.</p>
                 <div>
-                  <button class="buttons" type="button">В корзину</button>
+                  <button class="button" type="button">В корзину</button>
                 </div>
                 <div>
                   <button class="button-picture" type="button">Добавить к сравнению</button>
