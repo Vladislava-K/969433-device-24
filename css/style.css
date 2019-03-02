@@ -140,7 +140,7 @@ img {
 
 .main-header {
   min-height: 186px;
-  margin-bottom:54px;
+  margin-bottom: 56px;
 }
 
 .main-navigation {
@@ -158,10 +158,18 @@ img {
 }
 
 .main-logo {
+  /*width: 163px;*/
+  margin: -16px 0 0 60px;
+  padding: 0 937px 0 0;
+}
+
+/*
+.main-logo {
   position: relative;
 	top: -17.5px;
   padding: 0 0 0 60px;
 }
+*/
 
 .main-logo:hover {
   opacity: 0.6;
@@ -174,11 +182,13 @@ img {
 .main-header-center {
   width: 100%;
 
-  margin: 0 0 35px 0;
+  margin: 0 0 24.5px 0;
   padding: 0;
 
   display: flex;
   flex-direction: row;
+
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -186,27 +196,9 @@ img {
   width: 440px;
 
   padding: 0 0 0 60px;
+  /*padding: 0 0 0 -162px;*/
   display: inline-flex;
   align-items: flex-end;
-}
-
-.user-navigation {
-  /*padding: auto; *//* ошибка*/
-  width: 260px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.product-navigation {
-  width: 220px;
-  padding: 0 60px 0 0;
-
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
 }
 
 .main-navigation input[type="search"] {
@@ -214,24 +206,42 @@ img {
   border-style: none;
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: -0.15px;
 
   font-family: "Open Sans";
   font-weight: 300;
-  width: 355px;
 
-  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  width: 355px;
+  padding: 0 15px 13px 38px;
+
+  border-bottom: 2px solid transparent;
 }
+
+.login-icon-search {
+  background-image: url("../img/search.svg");
+  background-position-x: 3px;
+  background-position-y: 8px;
+  background-repeat: no-repeat;
+}
+
+
 
 /*
 .main-navigation input[type="search"]:focus ~ .search-button {
     display:block;
 }
 */
-/**************
+
 .main-navigation input[type="search"] ~ .search-button {
   display: none;
 }
-*****************/
+
+/*
+.main-navigation input[type="search"]:focus ~ .search-button {
+    display: block;
+}
+*/
 .main-navigation input[type="search"]::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -246,7 +256,7 @@ img {
   font-weight: 300;
   width: 356px;
 
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid transparent;
 }
 
 .main-navigation input[type="search"]:hover::placeholder {
@@ -268,16 +278,19 @@ img {
   /*outline-offset: none;*/
 }
 
+.main-navigation input[type="search"]:focus ~ .search-button {
+    display: block;
+  }
 /*
 .main-navigation input[type="search"]:focus~.search-button {
   display: flex;
-}*/
-
-/************
+}
+*/
+/*
 .main-navigation input[type="search"]:focus ~ .search-button {
     display:block;
   }
-**************/
+*/
 
 /*  .main-navigation input[type="search"]:focus ~ .search-button {
     display: #flex;
@@ -285,9 +298,12 @@ img {
 
 ::-webkit-search-cancel-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .search-button {
+
   font-size: 15px;
   line-height: 30px;
   background-color: transparent;
@@ -303,17 +319,74 @@ img {
 }
 
 .search-button:hover {
+
   color: #ffffff;
   background-color: #000000;
   border: 2px solid #000000;
 }
 
 .search-button:focus {
+
   color: rgba(255, 255, 255, 0.5);
   background-color: #000000;
   border: 2px solid #000000;
   outline-style: none;
 }
+
+
+
+
+
+.user-navigation a,
+.product-navigation a,
+.site-navigation a {
+  display: block;
+
+  vertical-align: middle;
+
+}
+
+
+
+
+
+.user-navigation {
+  width: 260px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+  margin-left: 100px;
+  padding-left: 0px;
+}
+
+
+
+
+.product-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+
+  letter-spacing: -0.3px;
+  width: 220px;
+  padding: 0 60px 0 18px;
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
 
 .site-navigation {
   font-size: 18px;
@@ -329,7 +402,8 @@ img {
 
   padding: 0 60px 0 60px;
   /*width: 100%;*/
-  margin-bottom: 57px;
+  /*margin-bottom: 50px;*/
+  margin-bottom: 0px;
 
   display: flex;
   flex-direction: row;
@@ -463,6 +537,7 @@ img {
 
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.65px;
   font-family: "Gilroy";
   font-weight: 800;
 
@@ -474,6 +549,7 @@ img {
 .breadcrumbs {
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: -0.28px;
   color: rgba(0, 0, 0, 0.6);
   font-family: "Open Sans";
   font-weight: 300;
@@ -500,8 +576,8 @@ img {
   content: "";
 
   position: absolute;
-  top: 10px;
-  right: -17px;
+  top: 8.5px;
+  right: -21.3px;
 
   width: 4px;
   height: 7px;
@@ -558,15 +634,15 @@ img {
 
   /*background-repeat: no-repeat;*/
 
-  padding: 0;
-  margin: 0;
+/*  padding: 0;*/
+/*  margin: 0;*/
   width: 266px;
   /*margin-bottom: 188px;*/
 }
 
 .filters h2 {
   font-size: 16px;
-  letter-spacing: 3px;
+  letter-spacing: 3.45px;
   line-height: 24px;
   color: #000000;
   font-family: "Gilroy";
@@ -576,37 +652,42 @@ img {
   background-color: #dcdcdc;
   /*min-height: 68px;*/
   padding-left: 2px;
-  margin-bottom: 300px;
+  margin-bottom: 244.5px;
 }
 
-.filters fieldset {
+.filter fieldset {
   border: none;
 
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
-.filters legend {
+.filter legend {
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.17px;
   color: #000000;
   font-family: "Gilroy";
   font-weight: 800;
 
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
+  /*padding: 0;*/
+/*  margin: 0;*/
+  margin-bottom: 18px;
 }
 
-.filters ul {
+legend.Bluetooth {
+  letter-spacing: 0.4px;
+}
+
+.filter ul {
   list-style: none;
   font-size: 14px;
   line-height: 40px;
+  /*letter-spacing: -0.2px;*/
   color: #000000;
   font-family: "Open Sans";
   font-weight: 300;
@@ -617,20 +698,28 @@ img {
 
 .chek-input {
   position: absolute;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none;*/
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .radio-input {
   position: absolute;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none;*/
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
-.filters .filter-option {
-  margin-bottom: 31px;
+.filter-option {
+  /*margin-bottom: 31px;*/
   padding-left: 40px;
 }
 
@@ -641,15 +730,19 @@ img {
 
   cursor: pointer;
   user-select: none;
+  letter-spacing: -0.3px;
 }
 
 .chek-input:hover + label {
   color: #000000;
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
-
 .chek-input:focus + label {
   color: #000000;
+}
+.chek-input:disabled + label {
+  color: #000000;
+  opacity: 0.25;
 }
 
 /*
@@ -666,8 +759,8 @@ img {
 
   opacity: 0.3;
 }
-*/
 
+*/
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
@@ -675,14 +768,14 @@ img {
   width: 23px;
   height: 23px;
   left: -40px;
-  top: -7;
+  top: 7px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
   color: #000000;
-  opacity: 0.6;
+
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -690,7 +783,7 @@ img {
   position: absolute;
 
   left: -40px;
-  top: -7;
+  top: 7px;
   width: 27px;
   height: 23px;
 
@@ -700,19 +793,20 @@ img {
   color: #000000;
 }
 
-.chek-input:disabled + label {
-  color: #000000;
-  opacity: 0.3;
-}
-
 
 .radio-input:hover + label {
   color: #000000;
-  color: rgba(0, 0, 0, 0.6);
+  /*color: rgba(0, 0, 0, 0.6);*/
+  opacity: 0.6;
 }
 
 .radio-input:focus + label {
   color: #000000;
+}
+
+.radio-input:disabled + label {
+  color: #000000;
+  opacity: 0.25;
 }
 
 .filter-input-radio + label::before {
@@ -722,13 +816,13 @@ img {
   width: 25px;
   height: 25px;
   left: -40px;
-  top: 7;
+  top: 7px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   color: #000000;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
 }
 
 .filter-input-radio:checked + label::after {
@@ -738,21 +832,21 @@ img {
   width: 25px;
   height: 25px;
   left: -40px;
-  top: 7;
+  top: 7px;
 
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   color: #000000;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
 }
-
+/*
 .filter-input:disabled + label {
   color: #000000;
 
   opacity: 0.3;
 }
-
+*/
 
 
 .filter-button.button {

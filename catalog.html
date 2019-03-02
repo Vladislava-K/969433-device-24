@@ -10,13 +10,19 @@
   <body>
     <header class="main-header container">
       <nav class="main-navigation">
-        <a class="main-logo" href="index.html">
+        <!---  <a class="main-logo" href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
-        </a>
+        </a>--->
 
         <div class="main-header-center">
+
+          <a class="main-logo" href="index.html">
+            <img src="img/logo-device.svg" width="163" height="35" alt="Логотип Девайс">
+          </a>
+
+
           <form class="foundling" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" placeholder="Поиск по сайту">
+            <input class="login-icon-search" type="search" placeholder="Поиск по сайту">
             <button type="submit" class="search-button">Найти</button>
           </form>
 
@@ -72,27 +78,27 @@
       <div class="catalog-columns">
         <section class="filters">
           <h2>Фильтр:</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Цвет</legend>
-              <ul class="filter-option">
-                <li>
+              <ul>
+                <li class="filter-option">
                   <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="black" id="colour-black" checked>
                   <label for="colour-black">Черный</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="white" id="colour-white">
                   <label for="colour-white">Белый</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="blue" id="colour-blue" checked>
                   <label for="colour-blue">Синий</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="red" id="colour-red" checked>
                   <label for="colour-red">Красный</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="pink" id="colour-pink">
                   <label for="colour-pink">Розовый</label>
                 </li>
@@ -100,13 +106,13 @@
             </fieldset>
 
             <fieldset>
-              <legend>Bluetooth</legend>
-              <ul class="filter-option">
-                <li>
+              <legend class="Bluetooth">Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
                   <input class="visually-hidden radio-input filter-input-radio" type="radio" name="bluetooth" value="есть" id="question-yes" checked>
                   <label for="question-yes">Есть</label>
                 </li>
-                <li>
+                <li class="filter-option">
                   <input class="visually-hidden radio-input filter-input-radio" type="radio" name="bluetooth" value="нет" id="question-not">
                   <label for="question-not">Нет</label>
                 </li>
