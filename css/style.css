@@ -1569,7 +1569,8 @@ background-repeat: repeat;
   height: 50px;
   background-color: #f2f2f2;
   outline-style: none;
-  outline-color: none;
+
+  /*outline-color: none; ОШОБКА ВАЛИДАЦИИ*/
   /*outline-offset:      */
 
   font: inherit;
