@@ -140,7 +140,7 @@ img {
 
 .main-header {
   min-height: 186px;
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 
 .main-navigation {
@@ -159,8 +159,8 @@ img {
 
 .main-logo {
   /*width: 163px;*/
-  margin: -16px 0 0 60px;
-  padding: 0 937px 0 0;
+  margin: -18px 937px 2px 60px;
+  padding: 0;
 }
 
 /*
@@ -182,7 +182,7 @@ img {
 .main-header-center {
   width: 100%;
 
-  margin: 0 0 24.5px 0;
+  margin: 0 0 23.5px 0;
   padding: 0;
 
   display: flex;
@@ -218,7 +218,7 @@ img {
   border-bottom: 2px solid transparent;
 }
 
-.login-icon-search {
+.icon-search {
   background-image: url("../img/search.svg");
   background-position-x: 3px;
   background-position-y: 8px;
@@ -281,6 +281,20 @@ img {
 .main-navigation input[type="search"]:focus ~ .search-button {
     display: block;
   }
+
+.main-navigation input[type="search"] ~ .search-button:hover,
+.main-navigation input[type="search"] ~ .search-button:active,
+.main-navigation input[type="search"] ~ .search-button:focus {
+  display: block;
+}
+
+/****
+.search input[type="search"]:focus {border-botom: 356px solid #000}
+.search input[type="search"]:focus + .search-btn {
+  display: block;
+}
+***/
+
 /*
 .main-navigation input[type="search"]:focus~.search-button {
   display: flex;
@@ -346,10 +360,6 @@ img {
 
 }
 
-
-
-
-
 .user-navigation {
   width: 260px;
 
@@ -358,20 +368,25 @@ img {
   justify-content: space-between;
 
   list-style: none;
+
   margin-left: 100px;
   padding-left: 0px;
 }
 
+.рersonal-аrea {
+  padding-left: 26px;
+  letter-spacing: -0.085px;
+}
 
-
+.goout {
+  padding-right: 36px;
+}
 
 .product-navigation {
   display: flex;
   justify-content: space-between;
   list-style: none;
 
-
-  letter-spacing: -0.3px;
   width: 220px;
   padding: 0 60px 0 18px;
 
@@ -380,13 +395,37 @@ img {
   list-style: none;
 }
 
+.compare{
+  padding-left: 26px;
+  letter-spacing: -0.08px;
+}
 
+.basket{
+  padding-right: 1px;
+  padding-left: 23px;
+  letter-spacing: -0.5px;
+}
 
+.icon-аrea {
+  background-image: url("../img/user.svg");
+  background-position-x: 0px;
+  background-position-y: 8px;
+  background-repeat: no-repeat;
+}
 
+.icon-compare {
+  background-image: url("../img/compare.svg");
+  background-position-x: 7px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+}
 
-
-
-
+.icon-basket {
+  background-image: url("../img/cart.svg");
+  background-position-x: 0px;
+  background-position-y: 8px;
+  background-repeat: no-repeat;
+}
 
 .site-navigation {
   font-size: 18px;
@@ -412,13 +451,46 @@ img {
 
 .site-navigation li:first-child {
   width: 300px;
-  margin-right: 240px;
+  margin-right: 208px;
 }
 
 .site-navigation li:last-child {
   width: 120px;
-  margin-left: 110px;
+  margin-left: 75px;
 }
+
+.position-catalog {
+  letter-spacing: 3.55px;
+}
+
+.position-delivery {
+
+  letter-spacing: 3.6px;
+}
+
+.position-warra {
+letter-spacing: 3.6px;
+}
+
+.position-contacts {
+  letter-spacing: 3.55px;
+}
+
+
+.icon-catalog {
+/*
+  width: 16px;
+  height: 16px;
+*/
+
+  background-image: url("../img/plus.svg");
+  background-position-x: 230px;
+  background-position-y: 4px;
+  background-repeat: no-repeat;
+}
+
+
+
 
 .user-navigation,
 .product-navigation,
@@ -447,13 +519,15 @@ img {
 .user-navigation a:hover,
 .product-navigation a:hover,
 .site-navigation a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  /*color: rgba(0, 0, 0, 0.6);*/
+  opacity: 0.6;
 }
 
 .user-navigation a:focus,
 .product-navigation a:focus,
 .site-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3);
+  /*color: rgba(0, 0, 0, 0.3);*/
+  opacity: 0.3;
 }
 
 .user-navigation a:hover,
@@ -541,7 +615,7 @@ img {
   font-family: "Gilroy";
   font-weight: 800;
 
-  margin: 0;
+  margin-left: 59px;
   margin-bottom: 24px;
   padding: 0;
 }
@@ -557,7 +631,7 @@ img {
   list-style: none;
 
   padding: 0;
-  margin: 0;
+  margin-left: 60px;
   /*min-width: 382px;*/
   margin-bottom: 56px;
 
@@ -642,7 +716,7 @@ img {
 
 .filters h2 {
   font-size: 16px;
-  letter-spacing: 3.45px;
+  letter-spacing: 3.55px;
   line-height: 24px;
   color: #000000;
   font-family: "Gilroy";
@@ -651,7 +725,7 @@ img {
 
   background-color: #dcdcdc;
   /*min-height: 68px;*/
-  padding-left: 2px;
+  padding-left: 60px;
   margin-bottom: 244.5px;
 }
 
@@ -659,11 +733,11 @@ img {
   border: none;
 
   padding: 0;
-  margin: 0;
+  /*margin-left: 57px;*/
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 42px;
+  margin-bottom: 15px;
 }
 
 .filter legend {
@@ -676,11 +750,19 @@ img {
 
   /*padding: 0;*/
 /*  margin: 0;*/
-  margin-bottom: 18px;
+/*v  margin-bottom: 18px;*/
+/*  margin-left: 58px;*/
 }
 
-legend.Bluetooth {
-  letter-spacing: 0.4px;
+.colour legend{
+  margin-bottom: 18px;
+  margin-left: 58px;
+}
+
+.bluetooth legend {
+  margin-bottom: 27px;
+  margin-left: 58px;
+  letter-spacing: 0.3px;
 }
 
 .filter ul {
@@ -693,8 +775,16 @@ legend.Bluetooth {
   font-weight: 300;
 
   padding: 0;
-  margin: 0;
+  /*margin-left: 56;
+  margin-bottom: 1px;*/
 }
+
+.fieldset.color ul{
+  margin-left: 56px;
+  margin-bottom: 15px;
+}
+
+
 
 .chek-input {
   position: absolute;
