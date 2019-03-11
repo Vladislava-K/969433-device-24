@@ -15,7 +15,7 @@
     font-weight: 800;
     font-style: normal;
 }
-
+  
 body {
   margin: 0;
   padding: 0;
@@ -27,19 +27,9 @@ body {
 
   color: #000000;
   background-color: #ffffff;
-}
 
-/*
-body > * {
-  background-color: rgba(255, 0, 0, 0.3);
+  overflow-x: hidden; /*Отображается только область внутри элемента, остальное будет скрыто, для безразмерных цветных полос*/
 }
-body > * > * {
-  background-color: rgba(0, 255, 0, 0.3);
-}
-body > * > * > * {
-  background-color: rgba(0, 0, 255, 0.3);
-}
-*/
 
 a {
   text-decoration: none;
@@ -845,12 +835,25 @@ letter-spacing: 3.6px;
 
   width: 269px;
   padding-left: 59px;
+
+  position: relative;
+}
+
+.filters::before {
+  content: "";
+  position: absolute;
+  background: #efefef;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+
+  right: 100%;
 }
 
 .filters h2 {
   font-size: 16px;
   letter-spacing: 3.5px;
-  line-height: 70px;
+  line-height: 24px;
   color: #000000;
   font-family: "Gilroy";
   font-weight: 800;
@@ -859,9 +862,27 @@ letter-spacing: 3.6px;
   background-color: #dcdcdc;
   margin: 0;
   padding: 0;
-  padding-left: 3px;
+  padding: 23px 0 23px 3px;
+  /*padding-left: 3px;*/
   margin-bottom: 81px;
+
+  position: relative;
 }
+
+.filters h2::before {
+  content: "";
+  position: absolute;
+  background: #dcdcdc;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+
+  right: 100%;
+}
+
+
+
+
 
 .filter fieldset {
   border: none;
@@ -1081,29 +1102,42 @@ letter-spacing: 3.6px;
 
 .catalog {
   width: 760px;
-
+  margin-bottom: 75px;
 }
 
 .sorting {
   margin: 0;
   padding: 0;
+  background-color: #ebebeb;
 
+  margin-left: -72px;
   margin-bottom: 69px;
+
+  position: relative;
+}
+
+.sorting:after {
+  content: "";
+  position: absolute;
+  background: #ebebeb;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+
+  left: 100%;
 }
 
 .sorting h2 {
   font-size: 16px;
   letter-spacing: 3.5px;
-  line-height: 70px;
+  line-height: 24px;
   color: #000000;
   font-family: "Gilroy";
   font-weight: 800;
   text-transform: uppercase;
 
-  background-color: #ebebeb;
   margin: 0;
-  padding: 0;
-  padding-left: 3px;
+  padding: 23px 0 23px 74px;
 }
 
 .catalog-list {
@@ -1113,7 +1147,7 @@ letter-spacing: 3.6px;
   margin: 0;
 
   list-style: none;
-  margin-bottom: 52px;
+  /*margin-bottom: 52px;*/
 }
 
 .catalog-item {
@@ -1124,38 +1158,110 @@ letter-spacing: 3.6px;
 
   width: 360px;
   margin-right: 40px;
-  /*margin-bottom: 57px;*/
+  margin-bottom: 48px;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   /*justify-content: center;*/
-  align-items: flex-start;
+  align-content: flex-start;
 }
 
+/*
 .catalog-item .flag-new {
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   line-height: 24px;
   color: #000000;
   font-family: "Gilroy";
   font-weight: 800;
 
-  text-align: center;
-  opacity: 0.2;
-  text-transform: uppercase;
-
   position: absolute;
-
-  top: 48px;
-  right: 40px;
-
   width: 32px;
   height: 11px;
+  top: 23px;
+  right: 25px;
+
+  text-transform: uppercase;
+  padding: 48px 0 0 274px;
+
+  text-align: center;
+  opacity: 0.2;
+
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  border: 2px solid #000000;
+
+
+  padding: 24px 0 0 0;
+  box-sizing: border-box;
+  border: 2px solid #000000;*
+
 
   z-index: 2;
 }
+*/
 
+
+
+
+
+
+
+.catalog-item .flag-new {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Gilroy";
+  font-weight: 800;
+
+  text-transform: uppercase;
+  margin: -383px 0 0 274px;
+
+    /*display:block;*/
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    -khtml-border-radius:50px;
+
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  border: 2px solid #000000;
+  padding: 1px;
+
+  box-sizing: border-box;
+  background-color: rgba(205, 57, 68, 0);
+}
+
+/*.catalog-item .flag-new {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+
+
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  display: inline-block;
+
+  box-sizing: border-box;
+
+  background: #000
+}*/
+
+
+/*
 .catalog-item .flag-new::before {
   content: "";
   position: absolute;
@@ -1166,18 +1272,17 @@ letter-spacing: 3.6px;
   width: 60px;
   height: 60px;
 
-  /*border-radius: 30px;*/
   border-radius: 50%;
 
   background-color: rgba(205, 57, 68, 0);
-  /*background-color: transparent;*/
+
   border: 2px solid #000000;
   opacity: 0.1;
 
-  /*background: url("../img/shape 2.png")*/
   overflow: hidden;
   z-index: 3;
 }
+*/
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
@@ -1201,17 +1306,9 @@ letter-spacing: 3.6px;
   letter-spacing: 0.35px;
   background-color: #ffffff;
 
-  /*display: inline-block;
-  vertical-align: text-bottom;*/
-
   margin: 0;
   padding: 0;
   max-width: 260px;
-  /*text-align: center;*/
- /*vertical-align: middle;*/
- /*display: inline-block;*/
-align-content: flex-start;
-
 }
 
 .catalog-item-image {
@@ -1231,9 +1328,7 @@ align-content: flex-start;
   font-family: "Gilroy";
   font-weight: 300;
 
-
   background-color: #ffffff;
-
 
   /*display: inline-block;
   vertical-align: text-bottom;*/
@@ -1241,32 +1336,17 @@ align-content: flex-start;
   letter-spacing: 0.1px;
   margin: 0;
   padding: 0;
-  align-content: flex-start;
-
 
   margin-left: auto;
-
-  /*text-align: center;*/
- /*vertical-align: middle;
- display: inline-block;*/
-
 }
 
-
-
-
-
-
 .catalog-item .actions {
-  /*display: none;*/
-
   position: absolute;
   top: 0;
   left: 0;
 
   width: 100%;
   height: 379px;
-  /*padding: 40px 0;*/
 
   background-color: rgba(255,255,255,0.7);
   z-index: 10;
@@ -1286,17 +1366,6 @@ align-content: flex-start;
   justify-content: center;
   align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .catalog-item .button {
   min-width: 200px;
@@ -1372,12 +1441,12 @@ align-content: flex-start;
 
   padding: 0;
   margin: 0;
-  /*margin-bottom: 36px;*/
+  margin-top: -11px;
   /*padding-bottom: 36px;*/
 
   list-style: none;
   width: 760px;
-  margin-bottom: 36px;
+  /*margin-bottom: 64px;*/
   /*margin: 0 auto;*/
   text-transform: uppercase;
   line-height: 70px;
