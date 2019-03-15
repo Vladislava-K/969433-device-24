@@ -52,6 +52,33 @@
           </li>
         </ul>
       </nav>
+
+      <section class="menu-catalog">
+        <ul>
+          <li>
+            <a class="" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#">Экшн-камеры</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Фитнеc-браслеты</a>
+          </li>
+          <li>
+            <a href="#">Умные часы</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
     </header>
 
     <!--БЛОК, КОТОРЫЙ ДЕЛАЕТСЯ ПОЗЖЕ-->
@@ -173,25 +200,19 @@
 
     <section class="modal modal-writetous">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="card" action="https://echo.htmlacademy.ru" method="post">
-        <div class="data">
-          <p>
-            <div class="data-col">
-              <label for="user-name">Ваше имя:</label>
-              <input class="name-icon-user" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-            </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="appointment-data">
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <p>
-            <div class="data-col">
-              <label for="user-email">Ваш e-mail:</label>
-              <input class="email-icon-user" id="user-email" type="email" name="user-email" placeholder="email@example.com">
-            </div>
+          <p class="appointment-item">
+            <label for="appointment-email">Ваш e-mail:</label>
+            <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
           </p>
-        </div>
-        <div class="data data-col">
-          <p>
-            <label for="user-letter">Текст письма:</label>
-            <textarea class="letter-icon-user" id="user-letter" placeholder="В свободной форме" name="letter" rows="5"></textarea>
+          <p class="appointment-item">
+            <label for="appointment-letter">Текст письма:</label>
+            <textarea id="appointment-letter" name="letter" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <button class="button" type="submit">Отправить</button>
