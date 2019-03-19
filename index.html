@@ -83,34 +83,43 @@
     <main>
       <h1 class="visually-hidden">Девайс</h1>
       <section class="slider container">
+<!--        
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
         <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
         <div class="slider-controls">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+
+          <label class="slider-controls-item slider-controls-item-1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item-2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item-3" for="product-3">Третий</label>
         </div>
 
+        <i class="active"></i>
+        <i></i>
+        <i></i>
+  -->
         <ul class="slider-list">
           <li class="slider-item">
-            <h2>Делай селфи, как Бен Стиллер!</h2>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a class="slider-item-button button" href="#">Подробнее</a>
-            <ul>
-              <li>
-                <p>8,5 м</p>
-                <p>Длина палки</p>
-              </li>
-              <li>
-                <p>5 кг</p>
-                <p>Вес палки</p>
-              </li>
-              <li>
-                <p>Карбон</p>
-                <p>Материал</p>
-              </li>
-            </ul>
+            <div class="www">
+              <h2>Делай селфи, как Бен Стиллер!</h2>
+              <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="slider-item-button button" href="#">Подробнее</a>
+              <ul>
+                <li>
+                  <p>8,5 м</p>
+                  <p>Длина палки</p>
+                </li>
+                <li>
+                  <p>5 кг</p>
+                  <p>Вес палки</p>
+                </li>
+                <li>
+                  <p>Карбон</p>
+                  <p>Материал</p>
+                </li>
+              </ul>
+            </div>
           </li>
 
           <li class="slider-item">
@@ -146,73 +155,87 @@
       <div class="catalog-populars container">
         <h1 class="visually-hidden">Каталог товаров</h1>
         <ul>
-          <li class="popular">
+          <li>
             <a href="#popular-1">
-              <img src="../img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+              <div class="popular-center">
+                <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+              </div>
               <h3 class="popular-title">Виртуальная реальность</h3>
             </a>
           </li>
-          <li class="popular">
+          <li>
             <a href="#popular-2">
-              <img src="../img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+              <div class="popular-center">
+                <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+              </div>
               <h3 class="popular-title">Моноподы для селфи</h3>
             </a>
           </li>
-          <li class="popular">
+          <li>
             <a href="#popular-3">
-              <img src="../img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+              <div class="popular-center">
+                <img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+              </div>
               <h3 class="popular-title">Экшн-камеры</h3>
             </a>
           </li>
-          <li class="popular">
+          <li>
             <a href="#popular-4">
-              <img src="../img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+              <div class="popular-center">
+                <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+              </div>
               <h3 class="popular-title">Фитнес-браслеты</h3>
             </a>
           </li>
-          <li class="popular">
+          <li>
             <a href="#popular-5">
-              <img src="../img/popular-5.svg" width="56" height="98" alt="Умные часы">
+              <div class="popular-center">
+                <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+              </div>
               <h3 class="popular-title">Умные часы</h3>
             </a>
           </li>
-          <li class="popular">
+          <li>
             <a href="#popular-6">
-              <img src="../img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+              <div class="popular-center">
+                <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+              </div>
               <h3 class="popular-title">Квадрокоптеры</h3>
             </a>
           </li>
         </ul>
       </div>
 
-      <section class="services container">
+      <section class="catalog-services">
         <h1 class="visually-hidden">Сервисные услуги</h1>
-        <ul>
-          <li>
-            <button class="services-item-button button" type="button">Доставка</button>
-          </li>
-          <li>
-            <button class="services-item-button button" type="button">Гарантия</button>
-          </li>
-          <li>
-            <button class="services-item-button button" type="button">Кредит</button>
-          </li>
-        </ul>
+        <div class="services container">
+          <ul>
+            <li>
+              <button class="services-item-button button" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="services-item-button button" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="services-item-button button" type="button">Кредит</button>
+            </li>
+          </ul>
 
-        <ul class="services-list">
-          <li class="services-item">
-            <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-item">
-            <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-item">
-            <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+          <ul class="services-list">
+            <li class="services-item">
+              <h2>Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-item">
+              <h2>Гарантия</h2>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-item">
+              <h2>Кредит</h2>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="catalog-logotypes container">
@@ -220,22 +243,22 @@
         <ul>
           <li class="logo">
             <a href="#logo-1">
-              <img src="../img/logo-1-n.png" width="260" height="100" alt="dji">
+              <img src="img/logo-1-n.png" width="260" height="100" alt="dji">
             </a>
           </li>
           <li class="popular">
             <a href="#logo-2">
-              <img src="../img/logo-2-n.png" width="260" height="100" alt="sp gadgets">
+              <img src="img/logo-2-n.png" width="260" height="100" alt="sp gadgets">
             </a>
           </li>
           <li class="popular">
             <a href="#logo-3">
-              <img src="../img/logo-3-n.png" width="260" height="100" alt="gopro">
+              <img src="img/logo-3-n.png" width="260" height="100" alt="gopro">
             </a>
           </li>
           <li class="popular">
             <a href="#logo-4">
-              <img src="../img/logo-4-n.png" width="260" height="100" alt="vive">
+              <img src="img/logo-4-n.png" width="260" height="100" alt="vive">
             </a>
           </li>
         </ul>
