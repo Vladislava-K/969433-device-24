@@ -108,7 +108,7 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                      <div class="bar" style="margin-left: 0%; width: 60%"></div> 
                     </div>
                     <div class="toggle toggle-min"></div>
                     <div class="toggle toggle-max"></div>
@@ -171,27 +171,32 @@
           <section class="catalog">
             <section class="sorting">
               <h2>Сортировка:</h2>
-              <ul>
-                <li class="sorting-current">
-                  <a href="#11">По цене</a>
-                </li>
-                <li>
-                  <a href="#22">По типу</a>
-                </li>
-                <li>
-                  <a href="#33">По популярности</a>
-                </li>
-                <li class="sorting-button-up">
-                  <a href="#up">
-                    <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
-                  </a>
-                </li>
-                <li class="sorting-button-down">
-                  <a href="#down">
-                    <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
-                  </a>
-                </li>
-              </ul>
+              <div  class="sorting-current">
+                <ul class="sorting-type">
+                  <li class="sorting-type-current">
+                    <a href="#11">По цене</a>
+                  </li>
+                  <li>
+                    <a href="#22">По типу</a>
+                  </li>
+                  <li>
+                    <a href="#33">По популярности</a>
+                  </li>
+                </ul>
+
+                <ul class="sorting-kind">
+                  <li class="sorting-button-up">
+                    <a href="#up">
+                      <img src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
+                    </a>
+                  </li>
+                  <li class="sorting-button-down sorting-button-current">
+                    <a href="#down">
+                      <img src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </section>
 
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
