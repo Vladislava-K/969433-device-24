@@ -485,14 +485,16 @@ img {
    position: relative;
  }
 
+ .site-position:focus-within .menu-catalog {
+   display: flex;
+ }
+
  .site-position:hover .menu-catalog,
  .site-position:focus .menu-catalog  {
    display: flex;
  }
 
- .site-position:focus-within .menu-catalog {
-   display: flex;
- }
+
 
 
 
@@ -611,7 +613,7 @@ img {
 }
 
 .slider-list {
-  margin: 0 0 63px 0;
+  margin: 0 0 223px 0;
   padding: 0;
 
   list-style: none;
@@ -799,6 +801,79 @@ p.size-name {
   list-style: none;
 }
 
+
+
+
+
+
+.popular-link {
+  display: inline-block;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.popular-link::before {
+  float: left;
+  content: "";
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+  left: 212px;
+  top: 820px;
+
+  background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+}
+
+.popular-link::after {
+  float: left;
+  content: "";
+  position: absolute;
+
+  width: 97px;
+  height: 55px;
+  left: 243px;
+  top: 873px;
+
+  background-image: url("../img/popular-1.svg");
+  background-repeat: no-repeat;
+}
+
+
+.popular-link h3 {
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  text-align: left;
+  line-height: 24px;
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+
+  width: 160px;
+  margin: 34px 0 0 0;
+  padding: 0;
+}
+
+.popular-align:nth-child(1) h3 {
+  letter-spacing: 0.5px;
+}
+
+.popular-align:nth-child(2) h3 {
+  letter-spacing: 0.5px;
+}
+
+.popular-link:hover .popular-link::before {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.popular-link:active .popular-link::after,
+.popular-link:active h3  {
+    opacity: 0.3;
+}
+
+
+/*
 .popular-link {
   display: inline-block;
   text-align: left;
@@ -852,6 +927,9 @@ p.size-name {
 .popular-link:active h3 {
   opacity: 0.3;
 }
+*/
+
+
 
 .catalog-services {
   margin: 0 0 73px 0;
@@ -875,7 +953,7 @@ p.size-name {
 
 .services {
   display: flex;
-  justify-content: space-between;
+/*  justify-content: space-between;*/
 }
 
 .services ul {
@@ -884,7 +962,7 @@ p.size-name {
 
 .services-choice {
   padding: 23px 0 0 0;
-  margin: 23px 0 0 0;
+  margin: 23px 84px 0 0;
   width: 278px;
 }
 
@@ -1806,10 +1884,17 @@ p.size-name {
   color: #000000;
 }
 
+a.actions-open:focus-within .actions {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .catalog-item:hover .actions,
 a.actions-open:hover .actions,
-a.actions-open:focus .actions,
-a.actions-open:focus-within .actions {
+a.actions-open:focus .actions {
   display: flex;
   flex-direction: column;
 
