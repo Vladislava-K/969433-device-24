@@ -200,7 +200,13 @@ img {
   display: none;
 }
 
-.foundling:focus-within input[type="search"] ~ .search-button,
+.foundling:focus-within input[type="search"] ~ .search-button {
+  display: block;
+  cursor: pointer;
+}
+
+.foundling input[type="search"]:focus ~ .search-button,
+.foundling input[type="search"]:active ~ .search-button,
 .foundling input[type="search"] ~ .search-button:hover,
 .foundling input[type="search"] ~ .search-button:focus,
 .foundling input[type="search"] ~ .search-button:active {
@@ -408,6 +414,7 @@ img {
   list-style: none;
 }
 
+
 .site-navigation > li:first-child {
   width: 300px;
   margin-right: 210px;
@@ -418,6 +425,19 @@ img {
   width: 119px;
   margin-left: 75px;
 }
+
+/*****
+.site-navigation li.site-position {
+  width: 300px;
+  margin-right: 210px;
+  padding-bottom: 13px;
+}
+
+.site-navigation li.site-dub {
+   width: 119px;
+   margin-left: 75px;
+*****/
+
 
 .site-navigation .position-catalog {
   position: relative;
@@ -446,14 +466,40 @@ img {
   opacity: 0.3;
 }
 
+/*******
 .site-navigation > li {
   position: relative;
 }
 
 .site-navigation > li:hover .menu-catalog,
+.site-navigation > li:focus .menu-catalog  {
+  display: flex;
+}
+
 .site-navigation > li:focus-within .menu-catalog {
   display: flex;
 }
+*******/
+
+ .site-position {
+   position: relative;
+ }
+
+ .site-position:hover .menu-catalog,
+ .site-position:focus .menu-catalog  {
+   display: flex;
+ }
+
+ .site-position:focus-within .menu-catalog {
+   display: flex;
+ }
+
+
+
+
+
+
+
 
 .site-navigation .menu-catalog {
   position: absolute;
@@ -541,6 +587,14 @@ img {
 #product-2:checked ~ .slider-controls label[for="product-2"],
 #product-3:checked ~ .slider-controls label[for="product-3"] {
   background-image: url("../img/slider-button.svg");
+}
+
+#product-1:focus ~ .slider-controls label[for="product-1"],
+#product-2:focus ~ .slider-controls label[for="product-2"],
+#product-3:focus ~ .slider-controls label[for="product-3"] {
+  margin-top: -2px;
+  border: 2px solid rgb(15, 148, 186);
+  margin-right: 19px;
 }
 
 .slider::before {
@@ -783,7 +837,11 @@ p.size-name {
 }
 
 .popular-align:nth-child(1) h3 {
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
+}
+
+.popular-align:nth-child(2) h3 {
+  letter-spacing: 0.5px;
 }
 
 .popular-link:hover .popular-center {
@@ -827,6 +885,11 @@ p.size-name {
 .services-choice {
   padding: 23px 0 0 0;
   margin: 23px 0 0 0;
+  width: 278px;
+}
+
+.services-list {
+  width: 758px;
 }
 
 .services-choice li {
@@ -872,7 +935,7 @@ p.size-name {
 
 .services h2 {
   margin: 0 0 31px 0;
-
+  letter-spacing: 0.8px;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -898,6 +961,7 @@ p.size-name {
 .services p {
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: -0.05px;
   color: #464646;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
@@ -922,6 +986,15 @@ p.size-name {
   color: #f7e184;
   background: #000000;
 }
+
+/*****
+.services-button:focus .services-item-button,
+#service-1:focus ~ .services-choice label[for="service-1"],
+#service-2:focus ~ .services-choice label[for="service-2"],
+#service-3:focus ~ .services-choice label[for="service-3"] {
+  border: 2px solid rgb(15, 148, 186);
+}
+*****/
 
 .services-button:nth-child(2):active .services-item-button,
 #service-2:checked ~ .services-choice label[for="service-2"] {
@@ -1476,6 +1549,17 @@ p.size-name {
   opacity: 0.25;
 }
 
+.filter-input-checkbox:disabled:hover + label,
+.filter-input-radio:disabled:hover + label,
+.filter-input-checkbox:disabled:hover + label::before,
+.filter-input-radio:disabled:hover + label::before,
+.filter-input-checkbox:disabled:active + label,
+.filter-input-radio:disabled:active + label,
+.filter-input-checkbox:disabled:active + label::before,
+.filter-input-radio:disabled:active + label::before {
+  opacity: 0.25;
+}
+
 .filter-input-checkbox:hover + label::before,
 .filter-input-radio:hover + label::before {
   opacity: 0.3;
@@ -1486,6 +1570,14 @@ p.size-name {
 .filter-input-radio:focus + label::before,
 .filter-input-radio:active + label::before {
   opacity: 1;
+}
+
+.filter-input-checkbox:focus + label::before,
+.filter-input-radio:focus + label::before {
+  padding: 2px 2px 2px 2px;
+  left: -42px;
+  top: 5px;
+  border: 2px solid rgb(15, 148, 186);
 }
 
 .filter-button.button {
@@ -1710,7 +1802,14 @@ p.size-name {
   display: none;
 }
 
-.catalog-item:hover .actions {
+.actions-open {
+  color: #000000;
+}
+
+.catalog-item:hover .actions,
+a.actions-open:hover .actions,
+a.actions-open:focus .actions,
+a.actions-open:focus-within .actions {
   display: flex;
   flex-direction: column;
 

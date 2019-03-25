@@ -41,7 +41,7 @@
         </div>
 
         <ul class="site-navigation">
-          <li>
+          <li class="site-position">
             <a class="position-catalog" href="catalog.html">Каталог товаров</a>
             <section class="menu-catalog">
               <ul>
@@ -76,7 +76,7 @@
           <li>
             <a href="#">Гарантия</a>
           </li>
-          <li>
+          <li class="site-dub">
             <a href="#">Контакты</a>
           </li>
         </ul>
@@ -127,11 +127,11 @@
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="black" id="colour-black" checked>
+                    <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="black" id="colour-black" checked disabled>
                     <label for="colour-black">Черный</label>
                   </li>
                   <li class="filter-option">
-                    <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="white" id="colour-white">
+                    <input class="visually-hidden chek-input filter-input-checkbox" type="checkbox" name="colour" value="white" id="colour-white" disabled>
                     <label for="colour-white">Белый</label>
                   </li>
                   <li class="filter-option">
@@ -205,19 +205,23 @@
             <h2 class="visually-hidden">Список моноподов для селфи</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <h3 class="catalog-item-title">Любительская селфи-палка</h3>
+                <h3 class="catalog-item-title">
+                  <a class="actions-open" href="#">Любительская селфи-палка</a>
+                </h3>
                 <p class="catalog-item-image">
                   <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 </p>
                 <p class="catalog-item-price">500 руб.</p>
                 <div class="actions">
-                  <button class="button" type="button">В корзину</button>
-                  <button class="button-picture" type="button">Добавить к сравнению</button>
+                  <!-- <button class="button" type="button">В корзину</button> -->
+                  <!-- <button class="button-picture" type="button">Добавить к сравнению</button> -->
+                  <a class="button" href="#">В корзину</a>
+                  <a class="button-picture" href="#">Добавить к сравнению</a>
                 </div>
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-item-title">
-                  Профессиональная<br>селфи-палка
+                  <a class="actions-open" href="#">Профессиональная<br>селфи-палка</a>
                 </h3>
                 <p class="catalog-item-image">
                   <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -229,7 +233,9 @@
                 </div>
               </li>
               <li class="catalog-item">
-                <h3 class="catalog-item-title">Непотопляемая селфи-палка</h3>
+                <h3 class="catalog-item-title">
+                  <a class="actions-open" href="#">Непотопляемая селфи-палка</a>
+                </h3>
                 <p class="catalog-item-image">
                   <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 </p>
@@ -241,7 +247,9 @@
               </li>
               <li class="catalog-item">
                 <div class="flag-new">new</div>
-                <h3 class="catalog-item-title">Селфи-палка «Следуй за мной»</h3>
+                <h3 class="catalog-item-title">
+                  <a class="actions-open" href="#">Селфи-палка «Следуй за мной»</a>
+                </h3>
                 <p class="catalog-item-image">
                   <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 </p>
