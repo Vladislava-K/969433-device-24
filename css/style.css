@@ -788,11 +788,11 @@ p.size-name {
 }
 
 .slider-item:nth-child(2) p.size-name {
-    letter-spacing: 0.11px;
+  letter-spacing: 0.11px;
 }
 
 .slider-item:nth-child(3) p.size-name {
-    letter-spacing: -0.13px;
+  letter-spacing: -0.13px;
 }
 
 .catalog-populars ul {
